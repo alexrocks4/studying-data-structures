@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-private-methods"
+  ],
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "node": "14"
+        },
+        "useBuiltIns": "usage",
+        "corejs": {
+          "version": "3.9",
+          "proposals": true
+        }
+      }
+    ]
+  ]
+}
