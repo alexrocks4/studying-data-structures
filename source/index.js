@@ -1,4 +1,5 @@
 import DynamicInt32Array from './dynamic-int32-array.js';
+import Set from './set.js';
 
 /* eslint-disable no-console */
 
@@ -22,3 +23,16 @@ array.remove(0);
 console.log('removed array[0] : ', array.getStaticArray());
 array.remove(0);
 console.log('removed array[0] : ', array.getStaticArray());
+
+// Set
+const set = new Set();
+set.add(1);
+console.log('\n\n', set);
+set.remove(1);
+console.log(set);
+const newSet = new Set();
+newSet.add(1);
+newSet.add(2);
+newSet.add(3);
+set.union(newSet);
+console.log(set.union(newSet));
